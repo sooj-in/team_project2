@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #fff7ce;
+	background-image: url("../image/background_img.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
+}
+
+#wrap {
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	text-align: center;
+	width: 100%;
+	height: 28%;
+}
+#logo {
+	text-align: center;
+	width: 305px;
+	height: 263px;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+#logo img {
+	transform: scale(1);
+	transition: transform .2s;
+	width: 80%;
+	height: 80%;
+}
+
+#logo img:hover {
+	transform: scale(1.1);
+	transition: transform .2s;
+}
+
+#search {
+	width: 100%;
+	height: 55%;
+}
+
+#search_wrap {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+#search_data {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-scroll: none;
+}
+
+#search_data::-webkit-scrollbar {
+    display: none;
+}
+
+#search_input {
+	position: relative;
+	top: 20px;
+	left: 50%;
+	margin: 0 0 0 -40%;
+	width: 80%;
+	height: 50px;
+}
+
+#search_input input {
+	font-family: 'Jua', sans-serif;
+	font-size: 1.5em;
+}
+
+#search_result {
+	position: relative;
+	top:50px;
+	left:50%;
+	margin: 0 0 0 -40%;
+}
+
+#search_result table {
+	font-family: 'Jua', sans-serif;
+	background-color: rgba(255,255,255,0.7);
+	border-collapse: collapse;
+	width: 58.5%;
+}
+
+#search_result td {
+	padding: 10px 18px 10px 10px;
+}
+
+#search_result td:first-child {
+	background-color: rgba(0,0,0,0.1);
+}
+
+#search_result table {
+	position: absolute;
+}
+
+#searchKeyword {
+	position: absolute;
+	background-color: white;
+	width: 80%;
+	height: 100%;
+	border: none;
+	font-size: 1em;
+	padding-left: 5px;
+	display: inline;
+	outline: none;
+	box-sizing: border-box;
+	color: black;
+}
+#search_btn {
+	cursor: pointer;
+	position: absolute;
+	left: 80%;
+	width: 25%;
+	height: 100%;
+	background-color: #685a4f;
+	border: none;
+	font-size: 1em;
+	color: white;
+	outline: none;
+	display: inline;
+	margin-left: -10px;
+	box-sizing: border-box;
+}
+#search_btn:hover {
+	background-color: #f5d139;
+}
+
+#main {
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+#map {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+#clear {
+	clear: both;
+}
+
+#hidden2 {
+	width: 100%;
+	height: 10%;
+}
+
+.category, .category * {
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+.category {
+	position: absolute;
+	overflow: hidden;
+	top: 10px;
+	right: 10px;
+	width: 350px;
+	height: 50px;
+	z-index: 10;
+	border: 1px solid black;
+	font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.category .menu_selected {
+	background: #FF5F4A;
+	color: #fff;
+	border-left: 1px solid #915B2F;
+	border-right: 1px solid #915B2F;
+	margin: 0 -1px;
+}
+
+.category li {
+	list-style: none;
+	float: left;
+	width: 50px;
+	height: 45px;
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+.category .ico_comm {
+	display: block;
+	margin: 0 auto 2px;
+	width: 22px;
+	height: 26px;
+	background:
+		url('../image/icon/data_category.png') no-repeat;
+}
+
+.category .ico_artmuseum {
+	background-position: -10px 0;
+}
+
+.category .ico_museum {
+	background-position: -10px -36px;
+}
+
+.category .ico_hospital {
+	background-position: -10px -72px;
+}
+
+.category .ico_kidscafe {
+	background-position: -10px -108px;
+}
+
+.category .ico_park {
+	background-position: -10px -144px;
+}
+
+.category .ico_daycarecenter {
+	background-position: -10px -180px;
+}
+
+.category .ico_kindergarden {
+	background-position: -10px -216px;
+}
+
+.area {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #888;
+	border-radius: 3px;
+	font-size: 12px;
+	top: -5px;
+	left: 15px;
+	padding: 2px;
+}
+
+.info {
+	font-size: 12px;
+	padding: 5px;
+}
+
+.info .title {
+	font-weight: bold;
+}
